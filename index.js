@@ -5,5 +5,9 @@ app.get('/', (req, res) => {
   res.send({hi: 'there'});
 });
 
+app.get('/best', (req, res) => {
+  res.send({go: 'BYU'});
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
